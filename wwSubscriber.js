@@ -25,6 +25,5 @@ window.wwSubscribe = function (win, type, data) {
 		'data': data//发布内容
 	}
 	//利用 jquery 自定义事件
-	$(document).trigger("subscribe", eData);
 	$(document).trigger("subscribe." + type, eData);
 }
