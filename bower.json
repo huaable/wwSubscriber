@@ -1,0 +1,20 @@
+{
+  "name": "wwSubscriber",
+  "main": "wwSubscriber.js",
+  "version": "0.0.0",
+  "homepage": "https://github.com/huaable/wwSubscriber",
+  "authors": [
+    "xiaohua <coolr@foxmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
