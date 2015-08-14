@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="wwSubscriber.js"></script>
+<body>
+<style>
+    .children {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #DDD;
+    }
+</style>
+<iframe class="children" src="children1.html" frameborder="0"></iframe>
+<iframe class="children" src="children2.html" frameborder="0"></iframe>
+<iframe class="children" src="children3.html" frameborder="0"></iframe>
+<button id="broadcast">broadcast</button>
+<script>
+
+    $("#broadcast").click(function () {
+        wwSubscriptionBroadcast('article', {
+            time: new Date().getTime()
+        })
+    })
+</script>
+</body>
+</html>

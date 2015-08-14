@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="wwSubscriber.js"></script>
+<body>
+<ul id="js-subscribe-list">
+
+</ul>
+<script>
+    $(document).on("subscribe", function (event, message) {
+        var $win = message.$win;
+        var type = message.type;
+        var content = message.data;
+        $("#js-subscribe-list").append("<li>" + type + ":" + content.time + "</li>")
+    })
+</script>
+</body>
+</html>
